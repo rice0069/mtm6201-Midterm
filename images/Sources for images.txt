@@ -1,0 +1,11 @@
+female-baker:
+https://images.pexels.com/photos/6205509/pexels-photo-6205509.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+
+female-baker2:
+https://images.pexels.com/photos/6205515/pexels-photo-6205515.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+
+female-baker3: 
+https://images.pexels.com/photos/6205507/pexels-photo-6205507.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+
+background.jpeg
+https://images.pexels.com/photos/4913487/pexels-photo-4913487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
