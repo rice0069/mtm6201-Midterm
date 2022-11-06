@@ -52,15 +52,31 @@ table {
 /********************************************************************************/
 
 
+:root {
+    --main-font: 'Dancing Script', cursive; 
+
+}
+
+body {
+    background-image: url(../images/);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
 h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
     margin-top: 1rem;
+    
 }
 
 header {
     border: 1px solid red;
     padding: 1rem;
+    font-family: var(--main-font);
+    font-weight: bolder;
 }
 
 .top-nav {
