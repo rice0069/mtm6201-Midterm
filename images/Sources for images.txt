@@ -7,5 +7,11 @@ https://images.pexels.com/photos/6205515/pexels-photo-6205515.jpeg?auto=compress
 female-baker3: 
 https://images.pexels.com/photos/6205507/pexels-photo-6205507.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 
-background.jpeg
+background.jpg
 https://images.pexels.com/photos/4913487/pexels-photo-4913487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+
+chocolatecake.jpeg
+https://www.pexels.com/photo/sliced-cake-on-plate-291528/
+
+product-display.jpeg
+https://www.pexels.com/photo/baked-breads-om-plates-2245295/

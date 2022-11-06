@@ -53,7 +53,14 @@ table {
 
 
 :root {
-    --main-font: 'Dancing Script', cursive; 
+    --main-font: 'Dancing Script', cursive;
+    --second-font: 'Poor Story', cursive;
+
+    --main-fontcolor: #01F590; 
+
+    --font-size1: 3rem;
+    --font-size2: 2rem;
+    --font-size3: 1.5rem;
 
 }
 
@@ -73,8 +80,9 @@ h2 {
 }
 
 header {
-    border: 1px solid red;
+    border: 3px solid black;
     padding: 1rem;
+    color: var(--main-fontcolor);
     font-family: var(--main-font);
     font-weight: bolder;
 }
@@ -96,7 +104,24 @@ header {
     left: 0;
     right: 0;
     text-align: center;
-    top: 80%;
+    top: 65%;
+    font-size: 2rem;
+}
+
+.order {
+    color: var(--main-fontcolor);
+    font-family: var(--main-font);
+    font-size: var(--font-size2);
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.other-info p {
+    color: var(--main-fontcolor);
+    font-family: var(--main-font);
+    font-size: var(--font-size3);
+    font-weight: bolder;
+    text-decoration: none;
 }
 
 .company-logo {
@@ -108,19 +133,81 @@ header {
     text-align: right;
 }
 
-.main-nav {
+.main-nav ul {
     text-align: center;
+    display: flex;
+    margin: 0 auto;
+}
+
+.main-nav a {
+    color: var(--main-fontcolor);
+    font-family: var(--main-font);
+    font-size: var(--font-size2);
+    font-weight: bolder;
+    text-decoration: none;
+    margin-right: 1rem;
+    
+}
+
+.main-nav a:hover {
+    color: blue;
+}
+
+.main-nav li:hover {
+    animation: pulse .5s infinite;
+}
+
+@keyframes pulse {
+    0% { 
+        transform: scale(1); 
+    }
+    50% { 
+        transform: scale(1.1);
+    }
+    100% { 
+        transform: scale(1); 
+    }
 }
 
 .container {
     padding: 1rem;
-    border: 1px solid blue;
+}
+
+.photo-gallery {
+    border: 3px solid greenyellow;
+    color: var(--main-fontcolor);
+    font-family: var(--main-font);
+    font-weight: bolder;
+}
+
+.baker2 {
+    width: 200px;
+    height: 300px;
+}
+
+.baker3 {
+    width: 400px;
+    height: 300px;
+}
+
+.about {
+    border: 3px solid blue;
+    color: var(--main-fontcolor);
+    font-family: var(--main-font);
+    font-weight: bolder;
 }
 
 .about h2 {
-    text-align: center;
+    text-align: center; 
+    font-size: var(--font-size1);   
 }
-.baker {
+
+.about p {
+    font-family: var(--second-font);
+    font-size: var(--font-size3);
+}
+
+.baker1 {
     width: 200px;
     height: 300px;
     float: left;
