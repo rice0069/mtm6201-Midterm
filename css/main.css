@@ -64,12 +64,14 @@ table {
 
 }
 
+/* Allows me to include the padding/border size in an elements total size */
 *,
 *::before
 *::after {
     box-sizing: border-box;
 }
 
+/* Sets backgroun d image to cover the entire viewport */
 body {
     background-image: url(../images/background.jpg);
     background-position: center;
@@ -77,17 +79,23 @@ body {
     background-size: cover;   
 }
 
+/* Sets font font family & size to h2 tags aswell as gives them all 1rem of margin on underneath. */
 h2 {
     font-family: var(--main-font);
     font-size: var(--font-size1);
+    color: var(--main-fontcolor);
     margin-bottom: 1rem;
 }
 
+/* Sets font font family & size to p tags */
 p {
     font-family: var(--second-font);
     font-size: var(--font-size3);
+    color: var(--main-fontcolor);
+
 }
 
+/*  */
 header {
     border: 3px solid black;
     padding: 1rem;
@@ -97,6 +105,10 @@ header {
 }
 
 img:hover {
+    transform: scale(1.1);
+}
+
+iframe:hover {
     transform: scale(1.1);
 }
 
@@ -112,8 +124,12 @@ img:hover {
 .logo {
     position: relative; /* allows the slogan to be positions "absolutely" to the logo */
     margin-bottom: 2rem;
+    
 }
 
+.logo:hover {
+    animation: pulse .5s infinite;
+}
 /* Places the slogan ontop of the logo */
 .logo .slogan {
     position: absolute;
@@ -186,12 +202,12 @@ img:hover {
     }
 }
 
-.container {
-    padding: 1rem;
+.container + .container2 {
+    padding: 0 1rem 0 1rem;
 }
 
 .photo-gallery {
-    border: 3px solid greenyellow;
+    border: 3px solid black;
     color: var(--main-fontcolor);
     font-family: var(--main-font);
     font-weight: bolder;
@@ -202,7 +218,7 @@ img:hover {
 .image-scroll {
     display: flex;
     flex-direction: row;
-    width: fit-content;
+    overflow: hidden;
 }
 
 .image-scroll img {
@@ -210,23 +226,8 @@ img:hover {
     margin-left: 1rem;
 }
 
-.baker3 {
-    width: 400px;
-    height: 300px;
-}
-
-.chocolate-cake {
-    width: 400px;
-    height: 300px;
-}
-
-.product-display {
-    width: 400px;
-    height: 300px;
-}
-
 .about {
-    border: 3px solid blue;
+    border: 3px solid black;
     color: var(--main-fontcolor);
     font-family: var(--main-font);
     font-weight: bolder;
@@ -236,6 +237,11 @@ img:hover {
 }
 
 .about-info1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-content1 {
     display: flex;
 }
 
@@ -252,21 +258,20 @@ img:hover {
     margin-top: 1rem;
 }
 
+
+
 .about p {
     font-family: var(--second-font);
     font-size: var(--font-size3);
 }
 
 .baker1 {
-    width: 300px;
-    height: 300px;
     margin-right: 1rem;
 }
 
 .flour {
-    width: 400px;
-    height: 300px;
-    margin-top: 1rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
 }
 
 .rounded-corners {
@@ -274,7 +279,7 @@ img:hover {
 }
 
 .location {
-    border: 3px solid yellow;
+    border: 3px solid black;
     color: var(--main-fontcolor);
     font-family: var(--main-font);
     font-weight: bolder;
@@ -291,6 +296,51 @@ img:hover {
     margin-left: 1rem;
 }
 
+.menu-items {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid black;
+    margin-bottom: 1rem;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    width: 50%;
+  }
+
+  tr:first-child {
+    font-weight: bold;
+    border: 3px solid black;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #dddddd;
+  }
+
+  tr:nth-child(even) {
+    background-color: #B2BEB5;
+  }
+
+  #menu h2 {
+    margin-top: 1rem;
+  }
+
+  #catering-services h2 {
+    margin-top: 1rem;
+  }
+
+  #weddings h2 {
+    margin-top: 1rem;
+  }
+
+  footer {
+    background-color: #01F590;
+    padding: 2rem;
+    margin-top: 1rem;
+  }
 @media screen and (min-width: 1200px) {
 
     .container {

@@ -48,9 +48,9 @@
 
         <div id="nav" class="main-nav" role="navigation">
             <ul>
-                <li><a href="#" aria-label="navigate to Menu section">Menu |</a></li>
-                <li><a href="#" aria-label="Navigate to Catering Services section">Catering Services |</a></li>
-                <li><a href="#" aria label="Navigate to Weddings/Birthdays section">Weddings/Birthdays</a></li>
+                <li><a href="#menu" aria-label="navigate to Menu section">Menu |</a></li>
+                <li><a href="#catering-services" aria-label="Navigate to Catering Services section">Catering Services |</a></li>
+                <li><a href="#weddings" aria label="Navigate to Weddings/Birthdays section">Weddings/Birthdays</a></li>
             </ul>
         </div>
 
@@ -63,46 +63,57 @@
                 <h2 role="heading">Photo Gallery</h2>
                 
                 <div class="image-scroll">
-                    
-                    <img class="baker3" src="./images/female-baker3.webp" 
-                                        srcset=""
-                    alt="Image of female baker">
+            
+                    <img class="baker3" src="images/female-baker3-400_x_300.webp" 
+                                        srcset="images/female-baker3-400_x_300.webp,
+                                                images/female-baker3-800_x_600.webp 2x,
+                                                images/female-baker3-1200_x_900.webp 3x"
+                                        alt="Image of female baker">
 
-                    <img class="chocolate-cake" src="./images/chocolatecake.jpeg" alt="Image of chocolate cake">
+                    <img class="chocolate-cake" src="images/chocolatecake-400_x_300.jpeg"
+                                                srcset="images/chocolatecake-400_x_300.jpeg,
+                                                        images/chocolatecake-800_x_600.jpeg 2x,
+                                                        images/chocolatecake-1200_x_900.jpeg 3x"
+                                                alt="Image of chocolate cake">
 
-                    <img class="product-display" src="./images/productdisplay.jpeg" alt="Image of chocolate cake"> 
+                    <img class="product-display" src="images/productdisplay-400_x_300.jpeg"
+                                                 srcset="images/productdisplay-400_x_300.jpeg,
+                                                         images/productdisplay-800_x_600.jpeg 2x,
+                                                         images/productdisplay-1200_x_900.jpeg 3x"
+                                                 alt="Image of chocolate cake"> 
                 </div>
             </article>
 
             <article class="about">
                 <div class="about-info1">
-                    <img class="baker1 rounded-corners" src="./images/female-baker.jpeg" alt="Image of a female employee">
-                
+                   
+                    <h2 role="heading">What we're about!</h2>
+                   
                     <div class="about-content1">
-                        <h2 role="heading">What we're about!</h2>
-
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa recusandae neque sit exercitationem eaque cum molestiae eum ullam nisi placeat, voluptate ut, quod, iure alias consequuntur error vero dolorem obcaecati!</p>
-                        
-                        <br>
+                        <img class="baker1 rounded-corners" src="images/female-baker-300_x_300.jpeg"
+                                                        srcset="images/female-baker-300_x_300.jpeg,
+                                                        images/female-baker-600_x_600.jpeg 2x,
+                                                        images/female-baker-900_x_900.jpeg 3x"  
+                                                        alt="Image of a female employee">
 
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa recusandae neque sit exercitationem eaque cum molestiae eum ullam nisi placeat, voluptate ut, quod, iure alias consequuntur error vero dolorem obcaecati!</p>
                     </div>
                 </div>
 
                 <div class="about-info2">
+                   
                     <div class="about-content2">
                         <h2 role="heading" class="vibes">Keeping the vibes local</h2>
 
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa recusandae neque sit exercitationem eaque cum molestiae eum ullam nisi placeat, voluptate ut, quod, iure alias consequuntur error vero dolorem obcaecati!</p>
-                        
-                        <br>
-
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa recusandae neque sit exercitationem eaque cum molestiae eum ullam nisi placeat, voluptate ut, quod, iure alias consequuntur error vero dolorem obcaecati!</p>
                     </div>
 
-                    <img class="flour rounded-corners" src="./images/flour.jpeg" alt="Image of a female employee">
+                    <img class="flour rounded-corners" src="images/flour-300_x_300.jpeg"
+                                                       srcset="images/flour-300_x_300.jpeg,
+                                                               images/flour-600_x_600.jpeg 2x,
+                                                               images/flour-900_x_900.jpeg 3x"  
+                                                       alt="Image of a female employee">
                 </div>
-
 
             </article>
 
@@ -117,11 +128,51 @@
                 <iframe class="google-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9447375322197!2d-75.7549368!3d45.349927799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1667704318218!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
             </article>
+
          </div> <!-- End tag of Container  -->
+         
+         <div class="container2">
+         
+            <article id="menu">
+                <h2>Menu!</h2>
+
+                <table class="menu-items">
+                    <tr>
+                        <th>Menu Items</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <th>Cupcakes (x6)</th>
+                        <th>15$</th>
+                    </tr>
+                    <tr>
+                        <th>Cakes (2 layers)</th>
+                        <th>30$</th>
+                    </tr>
+                    <tr>
+                        <th>Pies (9 inch)</th>
+                        <th>20$</th>
+                    </tr>
+                </table>
+            </article>
+
+            <article id="catering-services">
+                <h2>Catering Services!</h2>
+
+                <p>For 500$, We can cater your event!</p>
+            </article>
+
+            <article id="weddings">
+                <h2>Wedding/Birthdays!</h2>
+
+                <p>For 100$, We will make you a custom wedding/birthday cake that comes with special decorations and a Flavour Bakery special gift!</p>
+            </article>
+         
+        </div> <!-- End of container2 -->
      </main>
 
     <footer>
-
+        &copy Flavour Bakery Inc. All rights reserved.
     </footer>
 </body>
 </html>
