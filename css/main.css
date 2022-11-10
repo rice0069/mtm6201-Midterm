@@ -219,13 +219,14 @@ iframe:hover {
     font-family: var(--main-font);
     font-weight: bolder;
     padding: 1rem;
+    overflow: scroll;
 }
 
 /* Sets images in the photo-gallery to display horizontally when the viewport is < 1200px wide */
 .image-scroll {
     display: flex;
     flex-direction: row;
-    overflow: scroll;
+    /* overflow: scroll; */
 }
 
 /* Sets right & left margin to all images in the photo-gallery */
@@ -364,7 +365,6 @@ footer {
     .photo-gallery {
         width: 33.3%;
         text-align: center;
-        overflow: scroll;
     }
 
     .image-scroll {
@@ -374,7 +374,6 @@ footer {
 
     .image-scroll img {
         margin-bottom: 1rem;
-        display: inline-block;
         align-items: center;
     }
 
