@@ -212,7 +212,6 @@ iframe:hover {
     font-family: var(--main-font);
     font-weight: bolder;
     padding: 1rem;
-    overflow: hidden;
 }
 
 .image-scroll {
