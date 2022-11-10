@@ -368,8 +368,7 @@ footer {
     }
 
     .image-scroll {
-        flex-direction: column;
-        
+        flex-direction: column; 
     }
 
     .image-scroll img {
