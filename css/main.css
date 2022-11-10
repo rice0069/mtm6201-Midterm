@@ -95,7 +95,6 @@ p {
 
 }
 
-/*  */
 header {
     border: 3px solid black;
     padding: 1rem;
@@ -104,6 +103,7 @@ header {
     font-weight: bolder;
 }
 
+/* Makes images scale up on hover */
 img:hover {
     transform: scale(1.1);
 }
@@ -112,10 +112,12 @@ iframe:hover {
     transform: scale(1.1);
 }
 
+/* Makes the skiplinks invisible */
 .skip-links {
     display: none;  
 }
 
+/* sets the layout for the information at the top of the header */
 .top-info {
     display: flex;
     justify-content: space-between;
@@ -127,10 +129,7 @@ iframe:hover {
     
 }
 
-.logo:hover {
-    animation: pulse .5s infinite;
-}
-/* Places the slogan ontop of the logo */
+/* Positions the slogan absolutely ontop of the logo */
 .logo .slogan {
     position: absolute;
     margin: 0 auto;
@@ -141,8 +140,12 @@ iframe:hover {
     font-size: 2rem;
 }
 
+/* Gives the logo a pulsing animation on hover */
+.logo:hover {
+    animation: pulse .5s infinite;
+}
+
 .order {
-    color: var(--main-fontcolor);
     font-family: var(--main-font);
     font-size: var(--font-size2);
     font-weight: bolder;
@@ -150,13 +153,13 @@ iframe:hover {
 }
 
 .other-info p {
-    color: var(--main-fontcolor);
     font-family: var(--main-font);
-    font-size: var(--font-size3);
+    font-size: var(--font-size2);
     font-weight: bolder;
     text-decoration: none;
 }
 
+/* Sets size of the logo */
 .company-logo {
     width: 400px;
     height: 150px;
@@ -167,29 +170,31 @@ iframe:hover {
 }
 
 .main-nav ul {
-    text-align: center;
+    text-align: left;
     display: flex;
-    margin: 0 auto;
 }
 
+/* Sets the style of the header links */
 .main-nav a {
     color: var(--main-fontcolor);
-    font-family: var(--main-font);
+    font-family: var(--second-font);
     font-size: var(--font-size2);
     font-weight: bolder;
     text-decoration: none;
     margin-right: 1rem;
-    
 }
 
+/* Changes colors of nav link to blue on hover */
 .main-nav a:hover {
     color: blue;
 }
 
+/* Plays a pulsing animation on the header links on hover */
 .main-nav li:hover {
     animation: pulse .5s infinite;
 }
 
+/* Keyframes to set the pulse animation */
 @keyframes pulse {
     0% { 
         transform: scale(1); 
@@ -202,10 +207,12 @@ iframe:hover {
     }
 }
 
+/* Standardizes the padding for the containers */
 .container + .container2 {
     padding: 0 1rem 0 1rem;
 }
 
+/* Sets font styles, border and padding to the photo-gallery div */
 .photo-gallery {
     border: 3px solid black;
     color: var(--main-fontcolor);
@@ -214,17 +221,20 @@ iframe:hover {
     padding: 1rem;
 }
 
+/* Sets images in the photo-gallery to display horizontally when the viewport is < 1200px wide */
 .image-scroll {
     display: flex;
     flex-direction: row;
-    overflow: hidden;
+    overflow: scroll;
 }
 
+/* Sets right & left margin to all images in the photo-gallery */
 .image-scroll img {
     margin-right: 1rem;
     margin-left: 1rem;
 }
 
+/* Sets the font style, border and padding for the about article, and also displays content horizontally within its parent container */
 .about {
     border: 3px solid black;
     color: var(--main-fontcolor);
@@ -235,6 +245,7 @@ iframe:hover {
     flex-direction: column;
 }
 
+/* Displays content of the about-info1 div vertically */
 .about-info1 {
     display: flex;
     flex-direction: column;
@@ -257,13 +268,6 @@ iframe:hover {
     margin-top: 1rem;
 }
 
-
-
-.about p {
-    font-family: var(--second-font);
-    font-size: var(--font-size3);
-}
-
 .baker1 {
     margin-right: 1rem;
 }
@@ -273,10 +277,12 @@ iframe:hover {
     margin-left: 1rem;
 }
 
+/* Sets a class dedicated to rounding the corners of images */
 .rounded-corners {
     border-radius: 10px;
 }
 
+/* Sets the font style, border and padding for the location article, and also displays content horizontally within its parent container when viewport is < 1200px */
 .location {
     border: 3px solid black;
     color: var(--main-fontcolor);
@@ -295,64 +301,75 @@ iframe:hover {
     margin-left: 1rem;
 }
 
+/* Sets style for the menu table */
 .menu-items {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
     border: 2px solid black;
     margin-bottom: 1rem;
-  }
-  
-  td, th {
+}
+
+/* Styles the table data cell and table head */
+td, th {
     border: 1px solid #dddddd;
     text-align: center;
     padding: 8px;
     width: 50%;
-  }
+}
 
-  tr:first-child {
+/* Styles the first row of the table*/
+tr:first-child {
     font-weight: bold;
     border: 3px solid black;
-  }
-  
-  tr:nth-child(odd) {
+}
+
+/* Styles the odd table rows  */
+tr:nth-child(odd) {
     background-color: #dddddd;
-  }
+}
 
-  tr:nth-child(even) {
+/* Styles the even table rows  */
+tr:nth-child(even) {
     background-color: #B2BEB5;
-  }
+}
 
-  #menu h2 {
+#menu h2 {
     margin-top: 1rem;
-  }
+}
 
-  #catering-services h2 {
+#catering-services h2 {
     margin-top: 1rem;
-  }
+}
 
-  #weddings h2 {
+#weddings h2 {
     margin-top: 1rem;
-  }
+}
 
-  footer {
+/* styles the footer */
+footer {
     background-color: #01F590;
     padding: 2rem;
     margin-top: 1rem;
-  }
+}
+
+/* Sets a media query breakpoint once the viewport gets >= 1200px to change the layout of the website */
 @media screen and (min-width: 1200px) {
 
     .container {
         display: flex;
+        height: 750px
     }
 
     .photo-gallery {
         width: 33.3%;
         text-align: center;
+        overflow: scroll;
     }
 
     .image-scroll {
         flex-direction: column;
+        
     }
 
     .image-scroll img {

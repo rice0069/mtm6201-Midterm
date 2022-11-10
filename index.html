@@ -28,20 +28,20 @@
             <div class="order-info">
                 <p class="order">Order now! (We ship!)</p>
                 
-                <p class="company-phone">123-456-7890</p>
+                <p class="company-phone" itemtype="https://schema.org/telephone">123-456-7890</p>
             </div>  
             
             <div class="logo">
-                <img class="company-logo" src="./images/BookstoreLogo.png" alt="Flavor Bakery logo">
+                <img class="company-logo" src="./images/BookstoreLogo.png" alt="Flavor Bakery logo" itemtype="https://schema.org/logo">
                 <div class="slogan">
                     <p>A flavor for every mood!</p>
                 </div>
             </div>
 
             <div class="other-info">
-                <p class="company-email">FlavorBakery@gmail.com</p>
+                <p class="company-email" itemtype="https://schema.org/email">FlavorBakery@gmail.com</p>
 
-                <p class="company-address">4321 Bakery ave</p>
+                <p class="company-address" itemtype="https://schema.org/streetAddress">4321 Bakery ave</p>
             </div>
 
         </section>
@@ -49,9 +49,9 @@
         <!-- Bottom left header links -->
         <div id="nav" class="main-nav" role="navigation">
             <ul>
-                <li><a href="#menu" aria-label="navigate to Menu section">Menu |</a></li>
-                <li><a href="#catering-services" aria-label="Navigate to Catering Services section">Catering Services |</a></li>
-                <li><a href="#weddings" aria label="Navigate to Weddings/Birthdays section">Weddings/Birthdays</a></li>
+                <li><a itemtype="https://schema.org/SiteNavigationElement" href="#menu" aria-label="navigate to Menu section">Menu |</a></li>
+                <li><a itemtype="https://schema.org/SiteNavigationElement" href="#catering-services" aria-label="Navigate to Catering Services section">Catering Services |</a></li>
+                <li><a itemtype="https://schema.org/SiteNavigationElement" href="#weddings" aria label="Navigate to Weddings/Birthdays section">Weddings/Birthdays</a></li>
             </ul>
         </div>
 
@@ -60,28 +60,28 @@
     <main id="main" role="main">
         <div class="container">
             
-            <article class="photo-gallery" role="article">
+            <article itemscope itemtype="https://schema.org/ImageGallery" class="photo-gallery" role="article">
                 <h2 role="heading">Photo Gallery</h2>
                 
                 <div class="image-scroll">
             
-                    <img class="baker3" src="images/female-baker3-400_x_300.webp" 
-                                        srcset="images/female-baker3-400_x_300.webp,
-                                                images/female-baker3-800_x_600.webp 2x,
-                                                images/female-baker3-1200_x_900.webp 3x"
-                                        alt="Image of female baker">
+                    <img itemtype="https://schema.org/photo" class="baker3" src="images/female-baker3-400_x_300.webp" 
+                                                             srcset="images/female-baker3-400_x_300.webp,
+                                                                     images/female-baker3-800_x_600.webp 2x,
+                                                                     images/female-baker3-1200_x_900.webp 3x"
+                                                             alt="Image of female baker">
 
-                    <img class="chocolate-cake" src="images/chocolatecake-400_x_300.jpeg"
-                                                srcset="images/chocolatecake-400_x_300.jpeg,
-                                                        images/chocolatecake-800_x_600.jpeg 2x,
-                                                        images/chocolatecake-1200_x_900.jpeg 3x"
-                                                alt="Image of chocolate cake">
+                    <img itemtype="https://schema.org/photo" class="chocolate-cake" src="images/chocolatecake-400_x_300.jpeg"
+                                                             srcset="images/chocolatecake-400_x_300.jpeg,
+                                                                     images/chocolatecake-800_x_600.jpeg 2x,
+                                                                     images/chocolatecake-1200_x_900.jpeg 3x"
+                                                             alt="Image of chocolate cake">
 
-                    <img class="product-display" src="images/productdisplay-400_x_300.jpeg"
-                                                 srcset="images/productdisplay-400_x_300.jpeg,
-                                                         images/productdisplay-800_x_600.jpeg 2x,
-                                                         images/productdisplay-1200_x_900.jpeg 3x"
-                                                 alt="Image of chocolate cake"> 
+                    <img itemtype="https://schema.org/photo" class="product-display" src="images/productdisplay-400_x_300.jpeg"
+                                                             srcset="images/productdisplay-400_x_300.jpeg,
+                                                                     images/productdisplay-800_x_600.jpeg 2x,
+                                                                     images/productdisplay-1200_x_900.jpeg 3x"
+                                                             alt="Image of chocolate cake"> 
                 </div>
             </article> <!-- End of photo-gallery article -->
 
@@ -91,11 +91,11 @@
                     <h2 role="heading">What we're about!</h2>
                    
                     <div class="about-content1">
-                        <img class="baker1 rounded-corners" src="images/female-baker-300_x_300.jpeg"
-                                                        srcset="images/female-baker-300_x_300.jpeg,
-                                                        images/female-baker-600_x_600.jpeg 2x,
-                                                        images/female-baker-900_x_900.jpeg 3x"  
-                                                        alt="Image of a female employee">
+                        <img itemtype="https://schema.org/photo" class="baker1 rounded-corners" src="images/female-baker-300_x_300.jpeg"
+                                                                 srcset="images/female-baker-300_x_300.jpeg,
+                                                                         images/female-baker-600_x_600.jpeg 2x,
+                                                                         images/female-baker-900_x_900.jpeg 3x"  
+                                                                 alt="Image of a female employee">
 
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa recusandae neque sit exercitationem eaque cum molestiae eum ullam nisi placeat, voluptate ut, quod, iure alias consequuntur error vero dolorem obcaecati!</p>
                     </div>
@@ -126,7 +126,7 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa recusandae neque sit exercitationem eaque cum molestiae eum ullam nisi placeat, voluptate ut, quod, iure alias consequuntur error vero dolorem obcaecati cum molestiae eum ullam nisi placeat, voluptate ut, quod cum molestiae eum ullam nisi placeat.</p>
                 </div>
                 
-                <iframe class="google-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9447375322197!2d-75.7549368!3d45.349927799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1667704318218!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe itemscope itemtype="https://schema.org/Map" class="google-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9447375322197!2d-75.7549368!3d45.349927799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1667704318218!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
             </article> <!-- End of location article  -->
 
@@ -137,7 +137,7 @@
             <article id="menu">
                 <h2>Menu!</h2>
 
-                <table class="menu-items">
+                <table itemscope itemtype="https://schema.org/Table" class="menu-items">
                     <tr>
                         <th>Menu Items</th>
                         <th>Price</th>
