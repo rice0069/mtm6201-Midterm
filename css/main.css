@@ -96,7 +96,15 @@ header {
     font-weight: bolder;
 }
 
-.top-nav {
+img:hover {
+    transform: scale(1.1);
+}
+
+.skip-links {
+    display: none;  
+}
+
+.top-info {
     display: flex;
     justify-content: space-between;
 }
@@ -202,8 +210,8 @@ header {
     margin-left: 1rem;
 }
 
-.baker2 {
-    width: 200px;
+.baker3 {
+    width: 400px;
     height: 300px;
 }
 
@@ -275,6 +283,46 @@ header {
     display: flex;
 }
 
+.location h2 {
+    text-align: center;
+}
+
 .location iframe {
     margin-left: 1rem;
+}
+
+@media screen and (min-width: 1200px) {
+
+    .container {
+        display: flex;
+    }
+
+    .photo-gallery {
+        width: 33.3%;
+        text-align: center;
+    }
+
+    .image-scroll {
+        flex-direction: column;
+    }
+
+    .image-scroll img {
+        margin-bottom: 1rem;
+        display: inline-block;
+        align-items: center;
+    }
+
+    .about {
+        width: 33.3%;
+    }
+
+    .location {
+        flex-direction: column;
+        width: 33.3%;
+    }
+
+    .location p {
+        margin-bottom: 1rem;
+    }
+
 }
