@@ -105,10 +105,12 @@ header {
 
 /* Makes images scale up on hover */
 img:hover {
+    transition: 250ms;
     transform: scale(1.1);
 }
 
 iframe:hover {
+    transition: 250ms;
     transform: scale(1.1);
 }
 
